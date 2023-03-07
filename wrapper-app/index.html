@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App composition poc</title>
+    <style>
+      .rootWrapper {
+        display: flex;
+      }
+
+      .navBar {
+        width: 200px;
+        background-color: red;
+        height: 100%;
+      }
+      body {
+        background-color: powderblue;
+      }
+    </style>
+    <script>
+      window.INJECTED_APP_URL = "https://shrill-foot.surge.sh/"
+    </script>
+
+    <script src="https://shrill-foot.surge.sh/getAssetsPaths.js"></script>
+  </head>
+  <body>
+    <div class="rootWrapper">
+      <div class="navBar"></div>
+      <div id="injectAppHere"></div>
+    </div>
+  </body>
+</html>
